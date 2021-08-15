@@ -32,6 +32,7 @@ botaoWater.addEventListener("click", changeColor);
 let botaoEarth = document.getElementById("earth");
 botaoEarth.addEventListener("click", changeColor);
 
+
 function imgPronta(event) {
   let output = document.getElementById('meme-image');
   if (event.target.id === 'meme-1') {
@@ -39,20 +40,19 @@ function imgPronta(event) {
   } else if (event.target.id === 'meme-2') {
     output.src = '/imgs/meme2.png'
   } else if (event.target.id === 'meme-3') {
-    output.src = '/imgs/meme1.png'
+    output.src = '/imgs/meme3.png'
   } else if (event.target.id === 'meme-4') {
-    output.src = '/imgs/meme1.png'
+    output.src = '/imgs/meme4.png'
   }
-  
 }
 
-let meme1 = getElementById('meme-1');
+let meme1 = document.getElementById('meme-1');
 meme1.addEventListener('click', imgPronta);
-let meme2 = getElementById('meme-2');
+let meme2 = document.getElementById('meme-2');
 meme2.addEventListener('click', imgPronta);
-let meme3 = getElementById('meme-3');
+let meme3 = document.getElementById('meme-3');
 meme3.addEventListener('click', imgPronta);
-let meme4 = getElementById('meme-4');
+let meme4 = document.getElementById('meme-4');
 meme4.addEventListener('click', imgPronta);
 
 
