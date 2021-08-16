@@ -10,6 +10,7 @@
 #meme-image-container , #meme-image-container img {
   height: 300px;
   width: 300px;
+  margin-bottom: 20px;
 }
 
 #meme-image-container img {
@@ -24,4 +25,24 @@
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
+}
+
+#border-selector-container button {
+  margin-right: 10px;
+  border-radius: 3px;
+  width: 80px;
+  color: white;
+  font-weight: 600;
+}
+
+#fire {
+  background-color: red;
+}
+
+#earth {
+  background-color: green;
+}
+
+#water {
+  background-color: blue;
 }
