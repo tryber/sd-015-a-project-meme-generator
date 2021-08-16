@@ -43,3 +43,17 @@ function changeBorderEarth() {
 fireButton.addEventListener('click', changeBorderFire);
 earthButton.addEventListener('click', changeBorderEarth);
 waterButton.addEventListener('click', changeBorderWater);
+
+/* Change Source Image Section */
+
+const memes = document.querySelectorAll('#image-selector-container img');
+
+function changeSource(event) {
+  const memeImage = document.getElementById('meme-image');
+  console.log(event.target);
+  memeImage.src = event.target.src;
+}
+
+memes.forEach((meme) => {
+  meme.addEventListener('click', changeSource);
+});

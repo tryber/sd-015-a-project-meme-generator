@@ -14,7 +14,7 @@
 }
 
 #meme-image-container img {
-  position: fixed;
+  position: absolute;
 }
 
 #meme-image-container p {
@@ -33,6 +33,7 @@
   width: 80px;
   color: white;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 #fire {
@@ -45,4 +46,11 @@
 
 #water {
   background-color: blue;
+}
+
+#image-selector-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: 1px solid black;
 }
