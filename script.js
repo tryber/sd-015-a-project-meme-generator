@@ -1,4 +1,4 @@
-const memeImageContainer = document.getElementById('meme-image-container');
+// const memeImageContainer = document.getElementById('meme-image-container');
 const memeText = document.getElementById('meme-text');
 const textInput = document.getElementById('text-input');
 const imgFileInput = document.getElementById('meme-insert');
@@ -12,5 +12,5 @@ textInput.addEventListener('input', () => {
 // Add image file
 imgFileInput.addEventListener('change', (image) => {
   const imageURL = URL.createObjectURL(image.target.files[0]);
-  memeImageContainer.style.backgroundImage = `url('${imageURL}')`;
+  memeImage.src = imageURL;
 });

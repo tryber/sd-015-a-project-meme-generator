@@ -7,11 +7,16 @@ div {
   height: 500px;
   border: 1px solid black;
   background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #meme-text {
   position: absolute;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
 }
