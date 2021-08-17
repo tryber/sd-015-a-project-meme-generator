@@ -22,3 +22,15 @@
     margin-top: 40px;
     z-index: 1;
 }
+
+#fire {
+    background-color: red;
+}
+
+#water {
+    background-color: blue;
+}
+
+#earth {
+    background-color: green;
+}
