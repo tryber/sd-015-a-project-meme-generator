@@ -10,9 +10,15 @@
 #meme-text {
     position: absolute;
     margin-left: 100px;
+    text-shadow: 5px 5px 5px black;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
 }
 
 #meme-image {
     position: absolute;
     margin-left: 100px;
+    margin-top: 40px;
+    z-index: 1;
 }
