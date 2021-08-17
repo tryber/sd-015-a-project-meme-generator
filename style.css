@@ -1,0 +1,13 @@
+#meme-text {
+  position: absolute;
+  z-index: 2;
+}
+
+#meme-container {
+  position: relative;
+}
+
+#meme-image {
+  position: absolute;
+  z-index: 1;
+}
