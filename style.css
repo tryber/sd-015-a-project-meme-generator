@@ -4,3 +4,16 @@
   background-color: white;
   border: solid 1px black;
 }
+
+#meme-text {
+  position: absolute;
+  width: 280px;
+  top: 280px;
+  left: 15px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  overflow-wrap: break-word;
+
+
+}

@@ -10,7 +10,7 @@ function addText() {
   });
 }
 function uploadImage() {
-  uploadInput.addEventListener('click', (event) => {
+  uploadInput.addEventListener('change', (event) => {
     const fileURL = window.URL.createObjectURL(event.target.files[0]);
     memeImg.src = fileURL;
     const style = getComputedStyle(memeContainer);
@@ -18,6 +18,7 @@ function uploadImage() {
     memeImg.style.width = style.width;
   });
 }
+
 
 addText();
 uploadImage();
