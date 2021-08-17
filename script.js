@@ -6,6 +6,8 @@ const memeImg = document.getElementById('meme-image');
 const fireBttn = document.getElementById('fire');
 const waterBttn = document.getElementById('water');
 const earthBttn = document.getElementById('earth');
+const memeBttn = document.getElementById('example-memes');
+const containerStyle = getComputedStyle(memeContainer);
 
 function addText() {
   textInput.addEventListener('keyup', (event) => {
@@ -17,9 +19,8 @@ function uploadImage() {
   uploadInput.addEventListener('change', (event) => {
     const fileURL = window.URL.createObjectURL(event.target.files[0]);
     memeImg.src = fileURL;
-    const style = getComputedStyle(memeContainer);
-    memeImg.style.height = style.height;
-    memeImg.style.width = style.width;
+    memeImg.style.height = containerStyle.height;
+    memeImg.style.width = containerStyle.width;
   });
 }
 
@@ -33,6 +34,17 @@ function applyBorder() {
   earthBttn.addEventListener('click', changeBorder);
 }
 
+function changeMeme(event) {
+  memeImg.src = event.target.src;
+  memeImg.style.height = containerStyle.height;
+  memeImg.style.width = containerStyle.width;
+}
+
+function applyExample() {
+  memeBttn.addEventListener('click', changeMeme);
+}
+
 addText();
 uploadImage();
 applyBorder();
+applyExample();
