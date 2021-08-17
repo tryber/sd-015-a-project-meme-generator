@@ -4,4 +4,22 @@
     height: 300px;
     margin-top: 10px;
     background-color: white;
+    position: relative;
+}
+
+#meme-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#meme-text {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    /* poderia  ter usado left: 0; e right: 0;*/
 }
