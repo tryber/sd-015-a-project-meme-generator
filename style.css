@@ -16,28 +16,28 @@
   overflow-wrap: break-word;
 }
 
-#fire{
+#fire {
   margin-top: 5px;
   border: 3px dashed red;
   background-color: red;
   color: white;
 }
 
-#water{
+#water {
   margin-top: 5px;
   border: 5px double blue;
   background-color: blue;
   color: white;
 }
 
-#earth{
+#earth {
   margin-top: 5px;
   border: 6px groove green;
   background-color: green;
   color: white;
 }
 
-.example-meme{
+.example-meme {
   width: 80px;
   height: 80px;
   margin-top: 10px;
