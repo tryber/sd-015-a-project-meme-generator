@@ -1,36 +1,69 @@
+body {
+    background-color: rgb(180,400,230);
+}
+
+#text-input {
+  border-style: groove;
+  border-color: rgb(350, 250, 150);
+  margin-left: 30px;
+}
+
 #meme-image-container {
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    background-color: white;
-    width: 700px;
-    height: 400px;
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  width: 435px;
+  height: 400px;
 }
 
 #meme-text {
-    position: absolute;
-    margin-left: 100px;
-    text-shadow: 5px 5px 5px black;
-    font-size: 30px;
-    color: white;
-    z-index: 2;
+  position: absolute;
+  margin-top: 330px;
+  align-content: center;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  z-index: 2;
 }
 
 #meme-image {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 40px;
-    z-index: 1;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.button-position {
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 #fire {
-    background-color: red;
+  background-color: red;
+  color: yellow;
+  font-size: 20px;
 }
 
 #water {
-    background-color: blue;
+  background-color: blue;
+  color: cyan;
+  font-size: 20px;
 }
 
 #earth {
-    background-color: green;
+  background-color: green;
+  color: burlywood;
+  font-size: 20px;
+}
+
+.meme-size {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+  border-style: dotted;
+  border-color: purple;
 }
