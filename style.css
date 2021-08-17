@@ -18,6 +18,9 @@
   margin: 0;
   left: 13.5px;
   top: 120px;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+  font-size: 30px;
 }
 
 
@@ -26,7 +29,7 @@ h1 {
  /* padding-top: 20px; */
   /* position: absolute; */
   margin: auto;
-  font-size: 17px;
+  font-size: 30px;
   text-align: center;
   font-family: impact, 'Bebas Neue', cursive, sans-serif;
   width: 100%;
