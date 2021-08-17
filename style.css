@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#meme-image-container {
+  position: absolute;
+  border: solid black 1px;
+  width: 200px;
+  height: 200px;
+  top: 40px;
+}
+
+#meme-text {
+  text-align: center;
+  position: absolute;
+  /* border: solid black 1px; */
+  width: 170px;
+  height: 70px;
+  margin: 0;
+  left: 13.5px;
+  top: 120px;
+}
+
+
+
+h1 {
+ padding-top: 20px;
+  /* position: absolute; */
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  font-family: impact, 'Bebas Neue', cursive, sans-serif;
+  width: 100%;
+  height: 100%;
+}
