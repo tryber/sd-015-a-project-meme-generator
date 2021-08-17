@@ -1,7 +1,24 @@
-* {
-  background-color: white;
+#meme-image-container {
+  padding: 0;
+  width: 200px;
+  height: 200px;
 }
 
 #meme-text {
-  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  max-width: 200px;
+  word-break: break-all;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#meme-imagem {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
