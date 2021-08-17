@@ -1,8 +1,16 @@
-const inputedText = document.getElementById('text-input');
-const displayedText = document.getElementById('meme-text');
+const inputText = document.getElementById('text-input');
+const displayText = document.getElementById('meme-text');
+const uploadImg = document.getElementById('meme-insert');
+const displayImg = document.getElementById('meme-image');
 
 function displayMemeText() {
-    displayedText.innerHTML = inputedText.value;
+    displayText.innerHTML = inputText.value;
 }
 
-inputedText.addEventListener('keyup', displayMemeText);
+inputText.addEventListener('keyup', displayMemeText);
+
+function displayImage() {
+    displayImg.innerText = uploadImg.value;
+}
+
+uploadImg.addEventListener('change', displayImage);
