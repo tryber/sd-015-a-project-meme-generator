@@ -1,0 +1,7 @@
+#meme-image-container {
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+    background-color: white;
+}
