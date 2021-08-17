@@ -25,10 +25,13 @@ section {
 
 #meme-image-container {
   background-color: white;
-  border: 1px solid black;
   width: 600px;
   height: 500px;
   margin-bottom: 2vh;
+}
+
+.container {
+  border: 1px solid black;
 }
 
 #meme-image {
@@ -70,16 +73,15 @@ section {
 
 .fire {
   background-color: red;
-  border: 3px dashed red ! important;
+  border: 3px dashed red;
 }
 
 .water {
   background-color: blue;
-  border: 5px double blue ! important;
+  border: 5px double blue;
 }
 
 .earth {
   background-color: green;
-  border: 6px groove green ! important;
+  border: 6px groove green;
 }
-
