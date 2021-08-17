@@ -22,4 +22,7 @@
     text-align: center;
     width: 100%;
     /* poderia  ter usado left: 0; e right: 0;*/
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
 }

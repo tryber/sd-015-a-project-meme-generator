@@ -29,5 +29,3 @@ window.addEventListener('load', function() {
 
 
 });
-
-console.log(360 * 2.68055555);
