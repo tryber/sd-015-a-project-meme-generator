@@ -3,7 +3,7 @@
   height: 50px;
 }
 
-#meme-1, #meme-2, #meme-3, #meme-4 {
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
   width: 150px;
   height: 150px;
 }
@@ -13,7 +13,7 @@
   position: absolute;
   top: 230px;
   left: 75px;
-  text-shadow:rgb(0, 0, 0) 5px 5px 5px;
+  text-shadow: black 5px 5px 5px;
   font-size: 30px;
   color: white;
 }
@@ -42,6 +42,3 @@
 #earth {
   background-color: green;
 }
-
-
-

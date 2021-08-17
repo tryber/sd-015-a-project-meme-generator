@@ -1,20 +1,29 @@
+const input = document.getElementById('text-input');
+const p = document.querySelector('#meme-text');
+const botaoFire = document.getElementById('fire');
+const botaoWater = document.getElementById('water');
+const botaoEarth = document.getElementById('earth');
+const meme1 = document.getElementById('meme-1');
+const meme2 = document.getElementById('meme-2');
+const meme3 = document.getElementById('meme-3');
+const meme4 = document.getElementById('meme-4');
+const memeInsert = document.getElementById('meme-insert');
 
 function inputToP() {
   p.innerText = input.value;
 }
 
-let input = document.getElementById('text-input');
 input.addEventListener('input', inputToP);
-let p = document.querySelector('#meme-text');
-
 
 function loadFile(event) {
-  let output = document.getElementById('meme-image');
+  const output = document.getElementById('meme-image');
   output.src = URL.createObjectURL(event.target.files[0]);
 }
 
+memeInsert.addEventListener('click', loadFile);
+
 function changeColor(event) {
-  let borda = document.querySelector('#meme-image-container')
+  const borda = document.querySelector('#meme-image-container');
 
   if (event.target.id === 'fire') {
     borda.style.border = '3px dashed red';
@@ -25,34 +34,24 @@ function changeColor(event) {
   }
 }
 
-let botaoFire = document.getElementById("fire");
-botaoFire.addEventListener("click", changeColor);
-let botaoWater = document.getElementById("water");
-botaoWater.addEventListener("click", changeColor);
-let botaoEarth = document.getElementById("earth");
-botaoEarth.addEventListener("click", changeColor);
-
+botaoFire.addEventListener('click', changeColor);
+botaoWater.addEventListener('click', changeColor);
+botaoEarth.addEventListener('click', changeColor);
 
 function imgPronta(event) {
-  let output = document.getElementById('meme-image');
+  const output = document.getElementById('meme-image');
   if (event.target.id === 'meme-1') {
-    output.src = '/imgs/meme1.png'
+    output.src = '/imgs/meme1.png';
   } else if (event.target.id === 'meme-2') {
-    output.src = '/imgs/meme2.png'
+    output.src = '/imgs/meme2.png';
   } else if (event.target.id === 'meme-3') {
-    output.src = '/imgs/meme3.png'
+    output.src = '/imgs/meme3.png';
   } else if (event.target.id === 'meme-4') {
-    output.src = '/imgs/meme4.png'
+    output.src = '/imgs/meme4.png';
   }
 }
 
-let meme1 = document.getElementById('meme-1');
 meme1.addEventListener('click', imgPronta);
-let meme2 = document.getElementById('meme-2');
 meme2.addEventListener('click', imgPronta);
-let meme3 = document.getElementById('meme-3');
 meme3.addEventListener('click', imgPronta);
-let meme4 = document.getElementById('meme-4');
 meme4.addEventListener('click', imgPronta);
-
-
