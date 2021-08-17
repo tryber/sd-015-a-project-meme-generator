@@ -3,6 +3,16 @@ function inputText() {
   const inMemeText = document.querySelector('.textH1');
   inMemeText.innerHTML = text.value;
 }
-inputText();
+text.addEventListener('keyup', inputText);
 
-text.addEventListener('change', inputText);
+function setImage() {
+  const leitorDeArquivos = new FileReader();
+  const placeHolder = document.querySelector('#meme-image');
+  const imagemEnviada = document.querySelector('#meme-insert').files[0];
+  leitorDeArquivos.readAsDataURL(imagemEnviada);
+
+  placeHolder.src = leitorDeArquivos.result;
+}
+const btn = document.querySelector('#sendImage');
+
+btn.addEventListener('click', setImage);
