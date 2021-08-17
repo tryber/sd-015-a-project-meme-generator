@@ -1,0 +1,56 @@
+#meme-insert-container div {
+  margin-bottom: 20px;
+}
+
+#meme-image-container {
+  border: 1px solid black;
+  background-color: white;
+}
+
+#meme-image-container , #meme-image-container img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#meme-image-container img {
+  position: absolute;
+}
+
+#meme-image-container p {
+  position: relative;
+  text-align: center;
+  top: 220px;
+  max-width: 300px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+#border-selector-container button {
+  margin-right: 10px;
+  border-radius: 3px;
+  width: 80px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#earth {
+  background-color: green;
+}
+
+#water {
+  background-color: blue;
+}
+
+#image-selector-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
