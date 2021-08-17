@@ -23,7 +23,7 @@ section {
   margin-bottom: 3vh;
 }
 
-#meme-image-container{
+#meme-image-container {
   background-color: white;
   border: 1px solid black;
   width: 600px;
@@ -42,7 +42,7 @@ section {
   width: 300px;
   overflow: auto;
   color: white;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0);
+  text-shadow: 5px 5px 5px rgba(0 , 0 , 0);
   margin-left: 150px;
 }
 
@@ -55,7 +55,7 @@ section {
   justify-content: space-around;
 }
 
-.img-generica{
+.img-generica {
   width: 100px;
   height: 70px;
   border: 2px solid black;
@@ -70,16 +70,16 @@ section {
 
 .fire {
   background-color: red;
-  border: 3px dashed red !important;
+  border: 3px dashed red ! important;
 }
 
 .water {
   background-color: blue;
-  border: 5px double blue !important;
+  border: 5px double blue ! important;
 }
 
 .earth {
   background-color: green;
-  border: 6px groove green !important;
+  border: 6px groove green ! important;
 }
 
