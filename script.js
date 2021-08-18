@@ -21,5 +21,5 @@ getMemeInsert.addEventListener('change', loadFile);
 
 // Requisito 3 --> RESOLVIDO PELO CSS <-- Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco. --> RESOLVIDO PELO CSS <--
 
-// Requisito 4 - Adicione o texto que será inserido sobre a imagem deve ter uma cor, sombra e tamanho específicos.
+// Requisito 4 --> RESOLVIDO PELO CSS <-- Adicione o texto que será inserido sobre a imagem deve ter uma cor, sombra e tamanho específicos. --> RESOLVIDO PELO CSS <--
 

@@ -4,10 +4,10 @@ body {
 }
 
 #meme-image-container {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   text-align: center;
-  margin: 20px auto 20px auto;
+  margin: 20px auto;
   background-color: white;
   border: solid black 1px;
 }
