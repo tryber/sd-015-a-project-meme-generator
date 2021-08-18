@@ -17,14 +17,16 @@
   position: absolute;
   top: 225px;
   width: 495px;
-  border: solid green;
+  border: 1px solid black;
 }
 /* https://stackoverflow.com/questions/1165497/how-to-prevent-text-from-overflowing-in-css*/
 #meme-text {
-  font-family: monospace;
+  text-shadow: 5px 5px 5px black;
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: break-word;
+  font-size: 30px;
+  color: white;
 }
 
 img {
