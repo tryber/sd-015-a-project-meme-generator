@@ -3,7 +3,7 @@ const paragraphOutput = document.getElementById('meme-text');
 const memeImageContainer = document.getElementById('meme-image-container');
 const memeImage = document.getElementById('meme-image');
 const memeInsert = document.getElementById('meme-insert');
-let styleOfContainer = window.getComputedStyle(memeImageContainer);
+const styleOfContainer = window.getComputedStyle(memeImageContainer);
 const divImage = document.getElementById('meme-image');
 divImage.style.width = styleOfContainer;
 divImage.style.height = styleOfContainer;
@@ -11,6 +11,7 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const allMemes = document.getElementsByClassName('allMemes');
+const defaultRgb = '1px solid black';
 
 function addToImageMeme() {
   paragraphOutput.innerText = firstInput.value;
@@ -26,44 +27,44 @@ memeInsert.addEventListener('change', addImageOnContainer);
 
 let colored = false;
 function changeToFire() {
-  if(colored === false) {
+  if (colored === false) {
     memeImageContainer.style.border = '3px dashed rgb(255, 0, 0)';
     colored = true;
   } else {
-    memeImageContainer.style.border = '1px solid black';
+    memeImageContainer.style.border = defaultRgb;
     colored = false;
   }
 }
 fireButton.addEventListener('click', changeToFire);
 
 function changeToWater() {
-  if(colored === false) {
+  if (colored === false) {
     memeImageContainer.style.border = '5px double rgb(0, 0, 255)';
     colored = true;
   } else {
-    memeImageContainer.style.border = '1px solid black';
+    memeImageContainer.style.border = defaultRgb;
     colored = false;
   }
 }
 waterButton.addEventListener('click', changeToWater);
 
 function changeToEarth() {
-  if(colored === false) {
+  if (colored === false) {
     memeImageContainer.style.border = '6px groove rgb(0, 128, 0)';
     colored = true;
   } else {
-    memeImageContainer.style.border = '1px solid black';
+    memeImageContainer.style.border = defaultRgb;
     colored = false;
   }
 }
 earthButton.addEventListener('click', changeToEarth);
 
 function putInContainerImage(e) {
-  let event = e;
+  const event = e;
   memeImage.src = event.target.src;
   memeImageContainer.style.backgroundImage = memeImage;
 }
 // Adding eventListener in all ready images
-for(let index = 0; index < allMemes.length; index += 1) {
+for (let index = 0; index < allMemes.length; index += 1) {
   allMemes[index].addEventListener('click', putInContainerImage);
 }

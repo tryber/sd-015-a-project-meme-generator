@@ -18,7 +18,8 @@
   top: 200px;
   width: 495px;
 }
-/* https://stackoverflow.com/questions/1165497/how-to-prevent-text-from-overflowing-in-css*/
+
+/* how to prevent text from overflowing in css */
 #meme-text {
   text-align: justify;
   text-shadow: 5px 5px 5px black;
@@ -39,33 +40,33 @@ img {
 }
 
 #fire {
-  border: 3px dashed rgb(255, 0, 0);
+  border: 3px dashed red;
   padding: 5px;
   border-radius: 15px;
   font-size: 22px;
   margin-right: 150px;
-  background-color: rgb(255, 0, 0);
+  background-color: red;
 }
 
 #water {
-  border: 5px double rgb(0, 0, 255);
+  border: 5px double blue;
   padding: 5px;
   border-radius: 15px;
   font-size: 22px;
   margin-right: 150px;
-  background-color: rgb(0, 0, 255);
+  background-color: blue;
 }
 
 #earth {
-  border: 6px groove rgb(0, 128, 0);
+  border: 6px groove green;
   padding: 5px;
   border-radius: 15px;
   font-size: 22px;
-  background-color: rgb(0, 128, 0);
+  background-color: green;
 }
 
 #text-to-meme {
-  text-shadow: 2px 2px 8px rgb(118, 255, 5);
+  text-shadow: 2px 2px 8px rgb(118 , 255 , 5);
   background-color: black;
   color: white;
   width: 615px;
