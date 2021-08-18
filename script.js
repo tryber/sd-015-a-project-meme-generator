@@ -13,8 +13,8 @@ showText();
 function showImage() {
   const upload = document.getElementById('meme-insert');
   const imageDiv = document.getElementById('meme-image');
+  const image = document.getElementById('meme');
   upload.addEventListener('change', () => {
-    const image = document.createElement('img');
     image.src = URL.createObjectURL(upload.files[0]);
     image.id = 'meme';
     imageDiv.appendChild(image);
