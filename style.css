@@ -1,23 +1,10 @@
 #meme-image-container {
   padding: 0;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border: solid 1px black;
   margin: 0;
   background-color: white;
-}
-
-#meme-text {
-  position: absolute;
-  z-index: 1;
-  background-color: transparent;
-  max-width: 200px;
-  word-break: break-all;
-}
-
-img {
-  width: 200px;
-  height: 200px;
 }
 
 #meme-image {
@@ -26,3 +13,21 @@ img {
   padding: 0;
   margin: 0;
 }
+
+#meme-text {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  word-break: break-all;
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  font-size: 30px;
+  margin-left: 5px;
+  max-width: 390px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
