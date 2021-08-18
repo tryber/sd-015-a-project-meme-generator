@@ -10,6 +10,7 @@ divImage.style.height = styleOfContainer;
 const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
+const allMemes = document.getElementsByClassName('allMemes');
 
 function addToImageMeme() {
   paragraphOutput.innerText = firstInput.value;
@@ -56,3 +57,13 @@ function changeToEarth() {
   }
 }
 earthButton.addEventListener('click', changeToEarth);
+
+function putInContainerImage(e) {
+  let event = e;
+  memeImage.src = event.target.src;
+  memeImageContainer.style.backgroundImage = memeImage;
+}
+// Adding eventListener in all ready images
+for(let index = 0; index < allMemes.length; index += 1) {
+  allMemes[index].addEventListener('click', putInContainerImage);
+}
