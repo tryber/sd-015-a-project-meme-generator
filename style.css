@@ -1,16 +1,20 @@
 body {
   text-align: center;
+  width: 100%;
 }
 
 #meme-image-container {
-  position: relative;
   width: 250px;
   height: 250px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  background-color: white;
+  border: solid black 1px;
 }
 
 #meme-text {
   position: absolute;
-  top: 50px;
+  top: 250px;
 }
 
 #meme-image {
