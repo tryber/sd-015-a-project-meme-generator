@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator Tabajara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">MEME GENERATOR TABAJARA</h1>
+    <input type="text" id="text-input" placeholder="Insira o texto aqui" maxlength="60">
+    <input type="file" name="Seletor de imagem" id="meme-insert">
+    <div id="meme-image-container">
+        <img id="meme-image">
+        <span id="meme-text"></span>
+    </div>
+
+    <h2>Estilos customizados:</h2>
+
+    <button id="earth">Earth</button>
+    <button id="fire">Fire</button>
+    <button id="water">Water</button>
+
+    <h2>Imagens pré selecionadas:</h2>
+
+    <div>
+        <img src="./imgs/meme1.png" alt="primeira imagem salva" class="saved-image" id="meme-1">
+        <img src="./imgs/meme2.png" alt="segunda imagem salva" class="saved-image" id="meme-2">
+        <img src="./imgs/meme3.png" alt="terceira imagem salva" class="saved-image" id="meme-3">
+        <img src="./imgs/meme4.png" alt="quarta imagem salva" class="saved-image" id="meme-4">   
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
