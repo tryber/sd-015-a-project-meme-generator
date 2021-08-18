@@ -1,4 +1,4 @@
-function showText() {
+function displayText() {
   const input = document.getElementById('text-input');
   const textContainer = document.getElementById('meme-text');
   const paragraph = document.createElement('p');
@@ -8,20 +8,22 @@ function showText() {
   });
 }
 
-showText();
+displayText();
 
-function showImage() {
+function displayImage(imgUrl) {
+  const image = document.getElementById('meme-image');
+  image.src = imgUrl;
+}
+
+function uploadImage() {
   const upload = document.getElementById('meme-insert');
-  const imageDiv = document.getElementById('meme-image');
-  const image = document.getElementById('meme');
   upload.addEventListener('change', () => {
-    image.src = URL.createObjectURL(upload.files[0]);
-    image.id = 'meme';
-    imageDiv.appendChild(image);
+    const imgUrl = URL.createObjectURL(upload.files[0]);
+    displayImage(imgUrl);
   });
 }
 
-showImage();
+uploadImage();
 
 function changeBorder() {
   const imageContainer = document.getElementById('meme-image-container');
@@ -40,3 +42,14 @@ function changeBorder() {
 }
 
 changeBorder();
+
+function displayDefaultImage() {
+  const defaultMemes = document.querySelectorAll('.default-meme');
+  defaultMemes.forEach((meme) => {
+    meme.addEventListener('click', (event) => {
+      displayImage(event.target.src);
+    });
+  });
+}
+
+displayDefaultImage();
