@@ -31,3 +31,31 @@ img {
   height: 400px;
 }
 
+.border-style {
+  display: flex;
+  margin: 10px 0;
+  width: 400px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.border-button {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  border-radius: 5%;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}

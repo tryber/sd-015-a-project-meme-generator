@@ -22,3 +22,21 @@ function showImage() {
 }
 
 showImage();
+
+function changeBorder() {
+  const imageContainer = document.getElementById('meme-image-container');
+  const borderInfo = {
+    fire: '3px dashed red',
+    water: '5px double blue',
+    earth: '6px groove green',
+  };
+  const buttons = document.querySelectorAll('.border-button');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      imageContainer.style.border = borderInfo[event.target.id];
+    });
+  });
+}
+
+changeBorder();
