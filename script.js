@@ -23,3 +23,26 @@ getMemeInsert.addEventListener('change', loadFile);
 
 // Requisito 4 --> RESOLVIDO PELO CSS <-- Adicione o texto que será inserido sobre a imagem deve ter uma cor, sombra e tamanho específicos. --> RESOLVIDO PELO CSS <--
 
+// Requisito 5 --> RESOLVIDO PELO HTML <-- Limite o tamanho do texto que o usuário pode inserir. --> RESOLVIDO PELO HTML <--
+
+// Requisito 6 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas. A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.
+const getFireButton = document.getElementById('fire');
+const getWaterButton = document.getElementById('water');
+const getEarthButton = document.getElementById('earth');
+const getMemeImageContainer = document.getElementById('meme-image-container');
+
+function styleFire() {
+  getMemeImageContainer.className = 'fire';
+}
+
+function styleWater() {
+  getMemeImageContainer.className = 'water';
+}
+
+function styleEarth() {
+  getMemeImageContainer.className = 'earth'; 
+}
+
+getFireButton.addEventListener('click', styleFire);
+getWaterButton.addEventListener('click', styleWater);
+getEarthButton.addEventListener('click', styleEarth);
