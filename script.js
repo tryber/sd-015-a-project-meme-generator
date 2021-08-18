@@ -2,7 +2,6 @@ const container = document.getElementById('meme-image-container');
 const input = document.getElementById('text-input');
 const text = document.getElementById('meme-text');
 const btnFileImg = document.getElementById('meme-insert');
-const imgSelect = document.getElementById('meme-image');
 const img = document.querySelector('img');
 const meme1 = document.getElementById('meme-1');
 const meme2 = document.getElementById('meme-2');
@@ -12,17 +11,21 @@ const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
 
-input.addEventListener('keyup', () => {
+input.addEventListener('input', () => {
   text.innerHTML = input.value;
 });
 
-function imgCaptura(){
+function imgCaptura() {
   img.src = this.src;
 }
 
-btnFileImg.addEventListener('input', function() {
-    img.src = URL.createObjectURL(this.files[0]);
-});
+//  Solução realizada através da fonte:
+//  https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
+function imgCapturaFile() {
+  img.src = URL.createObjectURL(this.files[0]);
+}
+
+btnFileImg.addEventListener('input', imgCapturaFile);
 
 meme1.addEventListener('click', imgCaptura);
 meme2.addEventListener('click', imgCaptura);

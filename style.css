@@ -1,27 +1,40 @@
-img{
-  width: 200px;
+img {
+  width: 300px;
   height: 300px;
 }
 
-#meme-image-container{
+#meme-image-container {
   background: white;
   border: 1px solid black;
+  width: 300px;
+  height: 300px;
 }
 
-#meme-text{
-  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+#meme-text {
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  margin-bottom: 250px;
 }
 
-#fire{
+#meme-image {
+  position: absolute;
+}
+
+#fire {
   background-color: red;
 }
 
-#water{
+#water {
   background-color: blue;
 }
 
-#earth{
+#earth {
   background-color: green;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 50px;
+  height: 50px;
 }
