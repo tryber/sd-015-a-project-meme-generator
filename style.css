@@ -1,0 +1,51 @@
+#meme-image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#meme-image {
+  width: 200px;
+  height: 200px;
+}
+
+.meme-image-tumbnail {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text */
+
+#meme-text {
+  text-align: center;
+  position: absolute;
+  inline-size: 200px;
+  overflow-wrap: break-word;
+  bottom: 20px;
+  left: 0;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+
+}
+
+#fire , #water , #earth {
+  margin-top: 10px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
