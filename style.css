@@ -22,3 +22,18 @@
   height: 95%;
   background-color: white;
 }
+
+#fire {
+  background-color: red;
+  border: 3px dashed red;
+}
+
+#water {
+  background-color: blue;
+  border: 5px double blue;
+}
+
+#earth {
+  background-color: green;
+  border: 6px groove green;
+}
