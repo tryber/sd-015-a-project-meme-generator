@@ -17,7 +17,7 @@ function addImageToMeMe() {
   imageContainer.src = URL.createObjectURL(inputImage.files[0]);
 }
 
-inputText.addEventListener('keyup', addTextToMeme)
+inputText.addEventListener('keyup', addTextToMeme);
 inputImage.addEventListener('change', addImageToMeMe);
 
 function changeBorder(event) {
@@ -39,10 +39,10 @@ buttonFire.addEventListener('click', changeBorder);
 buttonWater.addEventListener('click', changeBorder);
 buttonEarth.addEventListener('click', changeBorder);
 
-function addImageToMeMe(event) {
-  if(event.target.classList.contains('meme-image-tumbnail')){
+function addTumbnailToMeMe(event) {
+  if (event.target.classList.contains('meme-image-tumbnail')) {
     imageContainer.src = event.target.src;
   }
 }
 
-imageTumbnail.addEventListener('click', addImageToMeMe);
+imageTumbnail.addEventListener('click', addTumbnailToMeMe);
