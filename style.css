@@ -1,8 +1,9 @@
 #meme-image-container {
   position: relative;
-  border: solid black;
+  border: 1px solid black;
   width: 500px;
   height: 350px;
+  background-color: white;
 }
 
 #text-input {
@@ -18,7 +19,7 @@
   width: 495px;
   border: solid green;
 }
-
+/* https://stackoverflow.com/questions/1165497/how-to-prevent-text-from-overflowing-in-css*/
 #meme-text {
   font-family: monospace;
   word-wrap: break-word;
