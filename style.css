@@ -12,9 +12,15 @@
   height: 200px;
 }
 
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks
+.meme-image-tumbnail {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text*/
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text */
 
 #meme-text {
   text-align: center;
@@ -23,5 +29,24 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text*/
   overflow-wrap: break-word;
   bottom: 20px;
   left: 0;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 
+}
+
+#fire , #water , #earth {
+  margin-top: 10px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }
