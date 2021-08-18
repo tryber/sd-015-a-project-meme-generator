@@ -7,6 +7,7 @@ window.addEventListener('load', function() {
     const getEarthButton = document.getElementById('earth');
     const getWaterButton = document.getElementById('water');
     const getFireButton = document.getElementById('fire');
+    const getSavedImages = document.getElementsByClassName('saved-image');
 
     getTextInput.addEventListener('keyup', function() {
         getMemeSpan.innerHTML = getTextInput.value;
@@ -20,7 +21,7 @@ window.addEventListener('load', function() {
         if (FileReader && files && files.length) {
             let fileReader = new FileReader();
             fileReader.onload = function() {
-                getMemeImage.style.backgroundImage = `url(${fileReader.result})`;
+                getMemeImage.src = fileReader.result;
             }
             fileReader.readAsDataURL(files[0]);
         }  
@@ -40,5 +41,10 @@ window.addEventListener('load', function() {
         getImageDiv.style.border = '5px double blue';
     })
 
+    for(let image of getSavedImages) {
+        image.addEventListener('click', function() {
+            getMemeImage.src = image.src; 
+        })
+    }
 
 });

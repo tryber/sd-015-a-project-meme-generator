@@ -55,3 +55,8 @@
     background: radial-gradient(circle, rgba(0,126,252,1) 25%, rgba(0,240,252,1) 50%, rgba(44,103,218,1) 74%, rgba(45,240,253,1) 100%); */
     background-color: blue;
 }
+
+.saved-image {
+    height: 80px;
+    margin-right: 10px;
+}
