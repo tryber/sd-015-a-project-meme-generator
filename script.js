@@ -32,17 +32,20 @@ const getEarthButton = document.getElementById('earth');
 const getMemeImageContainer = document.getElementById('meme-image-container');
 
 function styleFire() {
-  getMemeImageContainer.className = 'fire';
+  getMemeImageContainer.style.border = 'dashed red 3px';
 }
 
 function styleWater() {
-  getMemeImageContainer.className = 'water';
+  getMemeImageContainer.style.border = 'double blue 5px';
 }
 
 function styleEarth() {
-  getMemeImageContainer.className = 'earth'; 
+  getMemeImageContainer.style.border = 'groove green 6px'; 
 }
 
 getFireButton.addEventListener('click', styleFire);
 getWaterButton.addEventListener('click', styleWater);
 getEarthButton.addEventListener('click', styleEarth);
+
+// Requisito 7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
+

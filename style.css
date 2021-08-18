@@ -39,18 +39,6 @@ body {
   margin: 20px auto 5px;
 }
 
-.fire {
-  border: dashed red 3px !important;
-}
-
-.water {
-  border: double blue 5px !important;
-}
-
-.earth {
-  border: groove green 6px !important;
-}
-
 #meme-image-container {
   width: 500px;
   height: 500px;
