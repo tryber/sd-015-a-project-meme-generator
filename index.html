@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+  <main>
+    <section>
+      <input type="text" name="texto" id="text-input" maxlength="60" size="47">
+    </section>
+    <section id="meme-image-container">
+      <div id="meme-text"></div>
+      <img id="meme-image">
+    </section>
+    <section>
+      <label for="imagem">Inesrir imagem:</label>
+      <input type="file" name="imagem" id="meme-insert">
+    </section>
+    <section class='border-style'>
+      <button id="fire" class="border-button">Fire</button>
+      <button id="water" class="border-button">Water</button>
+      <button id="earth" class="border-button">Earth</button>
+    </section>
+    <section class="sample-memes">
+      <img src="imgs/meme1.png" alt="dalamta" class="default-meme" id="meme-1">
+      <img src="imgs/meme2.png" alt="crianças" class="default-meme" id="meme-2">
+      <img src="imgs/meme3.png" alt="sapos" class="default-meme" id="meme-3">
+      <img src="imgs/meme4.png" alt="papai noel" class="default-meme" id="meme-4">
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
