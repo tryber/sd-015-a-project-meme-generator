@@ -37,3 +37,7 @@
   background-color: green;
   border: 6px groove green;
 }
+
+#meme-1, #meme-2, #meme-3, #meme-4 {
+  width: 80px;
+}

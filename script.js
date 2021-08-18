@@ -6,6 +6,10 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const caixaGrande = document.getElementById('meme-image-container');
+const memeUm = document.getElementById('meme-1');
+const memeDois = document.getElementById('meme-2');
+const memeTres = document.getElementById('meme-3');
+const memeQuatro = document.getElementById('meme-4');
 
 function transferText() {
   memeText.innerText = inputText.value;
@@ -20,7 +24,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader/onload
 function uploadImage() {
   const reader = new FileReader();
   const file = memeInsert.files;
-  reader.onload = function() {
+  reader.onload = function nomeQualQuer() {
     memeImage.src = reader.result;
   };
   reader.readAsDataURL(file[0]);
@@ -34,8 +38,17 @@ function changeClass(evento) {
   }
 }
 
+function changeImage(evento) {
+  const alvo = evento.target;
+  memeImage.src = alvo.src;
+}
+
 inputText.addEventListener('input', transferText);
 memeInsert.addEventListener('change', uploadImage);
 fireButton.addEventListener('click', changeClass);
 waterButton.addEventListener('click', changeClass);
 earthButton.addEventListener('click', changeClass);
+memeUm.addEventListener('click', changeImage);
+memeDois.addEventListener('click', changeImage);
+memeTres.addEventListener('click', changeImage);
+memeQuatro.addEventListener('click', changeImage);
