@@ -13,7 +13,7 @@
   height: 100px;
   background-color: aqua;
   font-size: 30px;
-  color:white;
+  color: white;
   text-shadow: 5px 5px 5px black;
 }
 
@@ -38,6 +38,6 @@
   border: 6px groove green;
 }
 
-#meme-1, #meme-2, #meme-3, #meme-4 {
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
   width: 80px;
 }
