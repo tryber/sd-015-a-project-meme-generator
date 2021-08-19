@@ -11,7 +11,7 @@ getInput.addEventListener('keyup', printText);
 
 // Requisito 2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 function loadFile(event) {
-  imgOutput = document.getElementById('meme-image');
+  const imgOutput = document.getElementById('meme-image');
   imgOutput.src = URL.createObjectURL(event.target.files[0]);
   // window.URL.revokeObjectURL(imgOutput);
 }
@@ -40,7 +40,7 @@ function styleWater() {
 }
 
 function styleEarth() {
-  getMemeImageContainer.style.border = 'groove green 6px'; 
+  getMemeImageContainer.style.border = 'groove green 6px';
 }
 
 getFireButton.addEventListener('click', styleFire);
@@ -48,4 +48,3 @@ getWaterButton.addEventListener('click', styleWater);
 getEarthButton.addEventListener('click', styleEarth);
 
 // Requisito 7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
-
