@@ -6,6 +6,7 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const memeContainer = document.getElementById('meme-image-container');
+const miniMemes = document.getElementsByClassName('meme-size');
 
 function displayMemeText() {
   displayText.innerHTML = inputText.value;
@@ -31,6 +32,18 @@ function borderStyle(event) {
     memeContainer.style.borderWidth = '6px';
     memeContainer.style.borderColor = 'green';
   }
+}
+
+function addEventMiniMeme() {
+  for(let index = 0; index < miniMemes.length; index += 1) {
+    miniMemes[index].addEventListener('click', displayMiniMeme);
+  }
+}
+
+addEventMiniMeme();
+
+function displayMiniMeme(event) {
+  displayImg.src = event.target.src;
 }
 
 inputText.addEventListener('keyup', displayMemeText);

@@ -31,8 +31,8 @@ body {
 
 #meme-image {
   position: absolute;
-  margin-left: 100px;
-  margin-top: 40px;
+  width: 435px;
+  height: 400px;
   z-index: 1;
 }
 
