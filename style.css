@@ -65,3 +65,15 @@ h1 {
 #earth {
   background-color: green;
 }
+
+.miniatura {
+  border: solid black 1px;
+  display: inline-block;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#exemplos {
+  position: absolute;
+  top: 350px;
+}
