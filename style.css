@@ -51,10 +51,13 @@ body {
 #examples {
   position: absolute;
   left: 72%;
-  /* border: solid black 1px; */
   width: 40%;
   display: block;
   max-width: 5%;
+}
+
+img + img {
+  margin-top: 5px;
 }
 
 #examples img {
@@ -65,6 +68,3 @@ body {
 
 }
 
-img + img {
-  margin-top: 5px;
-}
