@@ -48,16 +48,23 @@ body {
   border: solid black 1px;
 }
 
-#exemples {
+#examples {
   position: absolute;
-  left: 82%;
-  border: solid black 1px;
-  width: 15%;
-  height: 70%;
+  left: 72%;
+  /* border: solid black 1px; */
+  width: 40%;
   display: block;
+  max-width: 5%;
 }
 
-#meme-1 #meme-2 #meme-3 #meme-4 {
-  width: 50px;
-  height: 50px;
+#examples img {
+  width: 100%;
+  height: 50%;
+  display: block;
+  border: black solid 1px;
+
+}
+
+img + img {
+  margin-top: 5px;
 }

@@ -48,3 +48,16 @@ getWaterButton.addEventListener('click', styleWater);
 getEarthButton.addEventListener('click', styleEarth);
 
 // Requisito 7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
+function setMemeExample(e) {
+  const getMemeImage = document.getElementById('meme-image');
+  const selectedImage = e.target.src;
+  getMemeImage.src = selectedImage;
+}
+
+const getMemesExamples = document.getElementById('examples');
+function addEventOnExamples() {
+  for (let i = 0; i < getMemesExamples.childNodes.length; i += 1) {
+    getMemesExamples.childNodes[i].addEventListener('click', setMemeExample);
+  }
+}
+addEventOnExamples();
