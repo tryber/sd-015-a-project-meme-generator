@@ -25,19 +25,30 @@ body {
 }
 
 #meme-image-container {
-  margin-top: 100px;
+  margin-top: 80px;
   border: 1px solid white;
   width: 500px;
   height: 500px;
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 #meme-text {
   text-align: center;
-  align-self: flex-end;
-  margin-bottom: 20px;
+  position: absolute;
   padding: 15px;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 900;
+  z-index: 1;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+#meme-image {
+  width: 500px;
+  height: 500px;
+}
+
+#upload-container {
+  margin-top: 30px;
+  font-size: 1.25em;
 }
