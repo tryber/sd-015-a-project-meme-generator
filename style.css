@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap') ;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  background-color: rgb(34 , 34 , 34);
+  color: white;
+}
+
+#main-container {
+  display: flex;
+  width: 100vw;
+  max-height: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-input {
+  margin-top: 50px;
+  font-size: 1.25em;
+}
+
+#meme-image-container {
+  margin-top: 100px;
+  border: 1px solid white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#meme-text {
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 1.25em;
+  font-weight: 900;
+}
