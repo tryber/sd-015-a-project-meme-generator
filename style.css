@@ -26,10 +26,12 @@ body {
 
 #meme-image-container {
   margin-top: 80px;
-  border: 1px solid white;
-  width: 500px;
-  height: 500px;
+  border: 1px solid black;
+  width: 501px;
+  height: 501px;
   position: relative;
+  background-color: white;
+  color: black;
 }
 
 #meme-text {
