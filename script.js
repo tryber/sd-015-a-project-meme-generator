@@ -6,6 +6,7 @@ const imgContainer = document.getElementById('meme-image-container');
 const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
+const memesContainer = document.getElementById('meme-preview');
 
 input.addEventListener('keyup', () => {
   memeText.innerText = input.value;
@@ -27,3 +28,15 @@ water.addEventListener('click', () => {
 earth.addEventListener('click', () => {
   imgContainer.style.border = '6px groove green';
 });
+
+const memePreview = () => {
+  const memes = memesContainer.children;
+
+  for (let i = 0; i < memes.length; i += 1) {
+    memes[i].addEventListener('click', () => {
+      img.src = memes[i].src;
+    });
+  }
+};
+
+memePreview();
