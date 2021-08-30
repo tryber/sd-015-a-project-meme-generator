@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main-container">
+      <input type="text" id="text-input" maxlength="60" placeholder="Text" />
+      <div id="upload-container">
+        <label for="meme-insert"
+          >Upload Image
+          <input type="file" id="meme-insert" />
+        </label>
+      </div>
+      <div id="meme-image-container">
+        <img src="" alt="meme" id="meme-image" />
+        <span id="meme-text"></span>
+      </div>
+      <div id="meme-preview">
+        <img class="preview" src="imgs/meme1.png" alt="dicaprio" id="meme-1">
+        <img class="preview" src="imgs/meme2.png" alt="one does not simply" id="meme-2">
+        <img class="preview" src="imgs/meme3.png" alt="robert downey jr." id="meme-3">
+        <img class="preview" src="imgs/meme4.png" alt="spongebob" id="meme-4">
+      </div>
+      <div id="btn-container">
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
