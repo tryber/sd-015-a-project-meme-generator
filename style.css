@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#send-text {
+  border: black solid 1px;
+  width: fit-content;
+}
+
+#meme-image-container {
+  border: black 1px solid;
+  min-width: 300px;
+  min-height: 300px;
+}
