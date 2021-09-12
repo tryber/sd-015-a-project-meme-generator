@@ -1,4 +1,5 @@
 const placeImg = document.getElementById('meme-image-container');
+const image = document.getElementById('meme-image');
 
 const sendText = () => {
   const textInput = document.getElementById('text-input').value;
@@ -11,11 +12,8 @@ typeText.addEventListener('keyup', sendText);
 
 const sendImage = () => {
   const imageInput = document.getElementById('meme-insert');
-
-  const image = document.createElement('img');
+  image.src = '';
   image.src = URL.createObjectURL(imageInput.files[0]);
-  image.id = 'meme-image';
-  placeImg.appendChild(image);
 };
 
 const chosenImg = document.getElementById('meme-insert');
@@ -48,3 +46,36 @@ const simpleBorder = () => {
 
 const simple = document.getElementById('simple');
 simple.addEventListener('click', simpleBorder);
+
+const patternMeme = (event) => {
+  image.src = '';
+
+  switch (event.target.id) {
+  case 'meme-1':
+    image.src = 'imgs/meme1.png';
+    break;
+  case 'meme-2':
+    image.src = 'imgs/meme2.png';
+    break;
+  case 'meme-3':
+    image.src = 'imgs/meme3.png';
+    break;
+  case 'meme-4':
+    image.src = 'imgs/meme4.png';
+    break;
+  default:
+    image.src = '';
+  }
+};
+
+const meme1 = document.getElementById('meme-1');
+meme1.addEventListener('click', patternMeme);
+
+const meme2 = document.getElementById('meme-2');
+meme2.addEventListener('click', patternMeme);
+
+const meme3 = document.getElementById('meme-3');
+meme3.addEventListener('click', patternMeme);
+
+const meme4 = document.getElementById('meme-4');
+meme4.addEventListener('click', patternMeme);
