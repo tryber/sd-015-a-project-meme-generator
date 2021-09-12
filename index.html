@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="title">
+        <h1>MEME GENERATOR</h1>
+    </header>
+    <form id="my-form" action="" method="POST" enctype="multipart/form-data">
+        <input type="text" id="text-input" placeholder="Digite aqui sua zoeira" maxlength="60">
+        <input type="file" id="meme-insert" accept="image/*">
+        <div id="meme-image-container">
+            <div id="meme-text">
+                <h1></h1>
+            </div>
+            <img id="meme-image">
+        </div>
+        <div id="border-btn">
+            <button type="button" id="fire">Fire</button>
+            <button type="button" id="water">Water</button>
+            <button type="button" id="earth">Earth</button>
+            <button type="button" id="simple">Simple</button>
+        </div>
+        <div id="images">
+            <img src="imgs/meme1.png" id="meme-1" width="125px" height="100px">
+            <img src="imgs/meme2.png" id="meme-2" width="125px" height="100px">
+            <img src="imgs/meme3.png" id="meme-3" width="125px" height="100px">
+            <img src="imgs/meme4.png" id="meme-4" width="125px" height="100px">
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>

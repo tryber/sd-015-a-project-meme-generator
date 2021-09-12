@@ -1,0 +1,95 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('background.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#title {
+  text-align: center;
+  font-size: 35px;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 4px;
+  color: black;
+  text-shadow: whitesmoke 2px 2px, whitesmoke 5px 5px;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  align-self: center;
+}
+
+#text-input {
+  width: fit-content;
+  margin-bottom: 10px;
+  border: black 2px solid;
+}
+
+#meme-insert {
+  margin-bottom: 10px;
+  border: black 1px solid;
+}
+
+#meme-image-container {
+  border: black 1px solid;
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  white-space: normal;
+}
+
+#meme-image {
+  width: 800px;
+  height: 500px;
+}
+
+#meme-text {
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  top: 400px;
+  left: 50px;
+  width: 700px;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: Luckiest Guy, cursive;
+}
+
+#border-btn button {
+  color: white;
+  font-size: large;
+  padding: 10px;
+  margin: 10px 2px;
+  width: 100px;
+  border: black solid 2px;
+  border-radius: 5px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#simple {
+  background-color: black;
+}
+
+#images img {
+  border: black solid 1px;
+  border-radius: 10px 2px;
+}
