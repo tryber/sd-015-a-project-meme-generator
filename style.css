@@ -11,10 +11,10 @@ body {
 #title {
   text-align: center;
   font-size: 35px;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: Luckiest Guy, cursive;
   letter-spacing: 4px;
   color: black;
-  text-shadow:whitesmoke 2px 2px 0px, whitesmoke 5px 5px 0px;
+  text-shadow: whitesmoke 2px 2px, whitesmoke 5px 5px;
 }
 
 #my-form {
@@ -56,18 +56,18 @@ body {
   font-size: 30px;
   color: white;
   top: 400px;
-  left:50px;
+  left: 50px;
   width: 700px;
   word-wrap: break-word;
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: Luckiest Guy, cursive;
 }
 
 #border-btn button {
   color: white;
   font-size: large;
   padding: 10px;
-  margin: 10px 2px; 
+  margin: 10px 2px;
   width: 100px;
   border: black solid 2px;
   border-radius: 5px;
