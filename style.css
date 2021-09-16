@@ -1,11 +1,11 @@
-*{
+* {
   text-align: center;
 }
 
 #meme-image-container {
-  width: 80%;
-  height: 300px;
-  border: 10px double black;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
   margin: auto;
   margin-top: 20px;
   display: flex;
@@ -13,6 +13,15 @@
   align-items: flex-end;
 }
 
+div {
+  margin-bottom: 20px;
+}
+
+#meme-image {
+  width: 500px;
+  position: absolute;
+}
+
 #meme-text {
-  margin: 20px
+  z-index: 1;
 }
