@@ -3,14 +3,15 @@
 }
 
 #meme-image-container {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border: 1px solid black;
   margin: auto;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background-color: white;
 }
 
 div {
@@ -18,7 +19,7 @@ div {
 }
 
 #meme-image {
-  width: 500px;
+  width: 400px;
   position: absolute;
 }
 
