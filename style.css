@@ -1,16 +1,44 @@
 #meme-text {
-  position: absolute;
   z-index: 2;
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  text-shadow: black 5px 5px 5px;
+  font-size: 30px;
+  color: white;
 }
 
 #meme-image-container {
   background-color: white;
-  border: 1px solid black;
-  width: max-content;
-  height: max-content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+  width: fit-content;
+  height: fit-content;
 }
 
 #meme-image {
-  position: absolute;
   z-index: 1;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+.template {
+  width: 100px;
 }
