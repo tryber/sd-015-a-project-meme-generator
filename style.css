@@ -3,8 +3,11 @@
   z-index: 2;
 }
 
-#meme-container {
-  position: relative;
+#meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  width: max-content;
+  height: max-content;
 }
 
 #meme-image {
