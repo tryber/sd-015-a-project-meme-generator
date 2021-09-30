@@ -2,6 +2,7 @@ const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
 const upload = document.getElementById('meme-insert');
 const image = document.getElementById('meme-image');
+// const container = document.getElementById('meme-image-container');
 
 textInput.addEventListener('keyup', () => {
   memeText.innerText = textInput.value;
