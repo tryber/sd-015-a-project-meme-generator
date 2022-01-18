@@ -11,16 +11,23 @@ h1 {
   width: 499px;
 }
 
+.fire {
+  border: 3px dashed red;
+}
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
 #meme-image-container {
   position: relative;
   border: 1px solid black;
   width: 501px;
   height: 500px;
   background-color: white;
-}
-
-.fire {
-  border: 3px dashed red;
 }
 
 #meme-text {
