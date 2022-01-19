@@ -35,17 +35,17 @@ earth.addEventListener('click', () => {
 });
 
 meme1.addEventListener('click', () => {
-  image.src = './images/meme1.png';
+  image.src = './imgs/meme1.png';
 });
 
 meme2.addEventListener('click', () => {
-  image.src = './images/meme2.png';
+  image.src = './imgs/meme2.png';
 });
 
 meme3.addEventListener('click', () => {
-  image.src = './images/meme3.png';
+  image.src = './imgs/meme3.png';
 });
 
 meme4.addEventListener('click', () => {
-  image.src = './images/meme4.png';
+  image.src = './imgs/meme4.png';
 });
