@@ -6,6 +6,10 @@ const container = document.getElementById('meme-image-container');
 const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
+const meme1 = document.getElementById('meme-1');
+const meme2 = document.getElementById('meme-2');
+const meme3 = document.getElementById('meme-3');
+const meme4 = document.getElementById('meme-4');
 
 textInput.addEventListener('keyup', () => {
   memeText.innerText = textInput.value;
@@ -28,4 +32,20 @@ water.addEventListener('click', () => {
 earth.addEventListener('click', () => {
   container.classList.add('earth');
   container.classList.remove('water', 'fire');
+});
+
+meme1.addEventListener('click', () => {
+  image.src = './images/meme1.png';
+});
+
+meme2.addEventListener('click', () => {
+  image.src = './images/meme2.png';
+});
+
+meme3.addEventListener('click', () => {
+  image.src = './images/meme3.png';
+});
+
+meme4.addEventListener('click', () => {
+  image.src = './images/meme4.png';
 });
