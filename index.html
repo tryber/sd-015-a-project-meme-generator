@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <h1>Meme Generator</h1>
+  <main>
+    <section id="general-container">
+        <input id="text-input" type="text" maxlength="60">
+        <section id="upload">
+          <label for="meme-insert">Upload</label>
+          <input type="file" id="meme-insert">
+        </section>
+        <section>
+          <button id="fire" type="button">Fire</button>
+          <button id="water" type="button">Water</button>
+          <button id="earth" type="button">Earth</button>
+        </section>
+        <div id="meme-image-container">
+          <img id="meme-image" alt="choosen image">
+          <p id="meme-text"></p>
+        </div>
+    </section>
+    <section class="premade">
+      <img src="./imgs/meme1.png" id="meme-1" alt="man laughing" class="meme">
+      <img src="./imgs/meme2.png" id="meme-2" alt="man pointing to his head" class="meme">
+      <img src="./imgs/meme3.png" id="meme-3" alt="man squinting" class="meme">
+      <img src="./imgs/meme4.png" id="meme-4" alt="2 spider mans pointing to each other" class="meme">
+    </section>
+  </main>
+</body>
+  <script src="script.js"></script>
+</html>
